@@ -65,8 +65,8 @@ export default function Album() {
             <CssBaseline />
             <AppBar position="relative">
                 <Toolbar>
-                    <Typography variant="h6" color="inherit" noWrap>
-                        Album layout
+                    <Typography variant="h5" color="inherit" noWrap>
+                        My Album
           </Typography>
                 </Toolbar>
             </AppBar>
