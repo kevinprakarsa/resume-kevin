@@ -1,29 +1,26 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Card from '../components/Card';
+import Header from '../components/Header';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Container from '@material-ui/core/Container';
+import Project from '../components/Project';
+import Resume from '../components/Resume';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
-    paper: {
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-    }
-}));
-
-export default function CenteredGrid() {
-    const classes = useStyles();
+export default function Index() {
 
     return (
-        <div className={classes.root}>
-            <Grid container spacing={3}>
-                <Grid item xs={12} md={12}>
-                    <Card />
-                </Grid>
-            </Grid>
+        <div>
+            <CssBaseline />
+            <main>
+                <Header />
+                <Container maxWidth="md">
+                    <Project />
+                    <Resume />
+                    <Contact />
+                </Container>
+            </main>
+            <Footer />
         </div>
     );
 }

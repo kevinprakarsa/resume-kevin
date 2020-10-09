@@ -1,14 +1,22 @@
 import React from 'react';
 import './App.css';
-import Index from './pages/Index';
-//import AboutMe from './pages/AboutMe';
+import Resume from './pages/Index';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: 'Raleway'
+  }
+});
 
 function App() {
   return (
-    <div className="App">
-      <Index />
-      {/* <AboutMe/> */}
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Resume />
+      </div>
+    </ThemeProvider>
   );
 }
 
