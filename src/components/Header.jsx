@@ -3,6 +3,9 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import Container from '@material-ui/core/Container';
+import Menu from '../components/Menu';
+import Grid from '@material-ui/core/Grid'
+
 
 const useStyles = makeStyles((theme) => ({
     heroContent: {
@@ -31,6 +34,9 @@ export default function Header() {
     return (
         <div className={classes.heroContent}>
             <Container maxWidth="md">
+                <Grid item xs={12} align="right">
+            <Menu />
+                 </Grid>
                 <div className={classes.spacing}>
                     <Avatar alt="Remy Sharp" src={require("../assets/img/me.jpg")} className={classes.large} />
                 </div>
@@ -38,7 +44,7 @@ export default function Header() {
                     Hi, I'm Kevin Prakarsa Barrang Randa
                 </Typography>
                 <Typography variant="h6" align="left" className={classes.description}>
-                    I'm a <b>BEGINER WEB DEVELOPER</b> and <b></b> from <b>MAKASSAR</b>, Indonesia.
+                    I'm a <b>BEGINER WEB DEVELOPER</b> from <b>MAKASSAR</b>, Indonesia.
                     I want to be someone who could <b>BENEFIT OTHERS</b>, I could <b>DEVELOP MYSELF</b> and <b>HARD WORKER</b>. I am anxious to supplement my knowledge with practical experience and should be very grateful for favorable consideration my application.
                 </Typography>
             </Container>

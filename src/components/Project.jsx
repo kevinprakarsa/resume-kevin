@@ -26,14 +26,14 @@ export default function Project() {
             title: 'My Curriculum Vitae',
             description: <span>is a <b>Introduction About Me</b>.</span>,
             link: 'https://metrotechdigital.asia/',
-            img: "https://res.cloudinary.com/metrotech-digital-asia/image/upload/v1600759250/official-web/new-portfolio/toko-digital1_jqychh.png"
+            //img: "https://res.cloudinary.com/metrotech-digital-asia/image/upload/v1600759250/official-web/new-portfolio/toko-digital1_jqychh.png"
         },
         {
             id: 2,
             title: 'My GitHub',
             description: <span>is a <b>GitHub Account</b> all my <b>PROJECT</b> in here.</span>,
             link: 'https://github.com/kevinprakarsa',
-            img: "https://res.cloudinary.com/metrotech-digital-asia/image/upload/v1600759424/official-web/new-portfolio/toko-digital2_s7brx3.png"
+            //img: "https://res.cloudinary.com/metrotech-digital-asia/image/upload/v1600759424/official-web/new-portfolio/toko-digital2_s7brx3.png"
         }
     ]
 
